@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Local env and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.token
+secrets.*
+credentials.*
+
+# Logs and raw outputs
+*.log
+logs/
+raw_logs/
+private_exports/
+
+# Demo outputs
+examples/runs/generated-demo/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
