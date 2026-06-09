@@ -79,6 +79,8 @@ def _secret_patterns() -> list[tuple[str, re.Pattern[str]]]:
         ("google-api-key-prefix", re.compile(r"\bAIza[A-Za-z0-9_-]{20,}\b")),
         ("private-key-block", re.compile("-----BEGIN " + "PRIVATE KEY-----")),
         ("slack-bot-token", re.compile(r"\bxoxb-[A-Za-z0-9-]{10,}\b")),
+        ("local-user-path", re.compile(r"/Users/[A-Za-z0-9._ -]+/")),
+        ("local-home-path", re.compile(r"/home/[A-Za-z0-9._ -]+/")),
         ("password-assignment", re.compile(r"(?i)\b" + "password" + r"\s*=")),
         ("secret-assignment", re.compile(r"(?i)\b" + "secret" + r"\s*=")),
         ("token-assignment", re.compile(r"(?i)\b" + "token" + r"\s*=")),
