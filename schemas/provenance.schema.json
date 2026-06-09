@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/qra-public/provenance.schema.json",
+  "title": "QRA Public Provenance",
+  "type": "object",
+  "required": [
+    "artifact_status",
+    "run_id",
+    "sources",
+    "outputs"
+  ],
+  "properties": {
+    "artifact_status": {
+      "type": "string",
+      "enum": ["sample", "demo", "sanitized_real_run", "template"]
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_type": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "additionalProperties": true
+}

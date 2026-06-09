@@ -1,0 +1,52 @@
+{
+  "artifact_status": "sample",
+  "run_id": "2026-06-01-sample",
+  "source_type": "sample_public_input",
+  "sources": [
+    {
+      "paper_id": "sample-001",
+      "title": "Sample Paper A: Operational Closure In Toy Quantum Reconstructions",
+      "source": "Sample",
+      "url": "https://example.org/papers/sample-001",
+      "artifact_status": "sample"
+    },
+    {
+      "paper_id": "sample-002",
+      "title": "Sample Paper B: Relational State Assignments And Observer Records",
+      "source": "Sample",
+      "url": "https://example.org/papers/sample-002",
+      "artifact_status": "sample"
+    },
+    {
+      "paper_id": "sample-003",
+      "title": "Sample Paper C: Classical Hidden Variables In A Limited Fact Model",
+      "source": "Sample",
+      "url": "https://example.org/papers/sample-003",
+      "artifact_status": "sample"
+    },
+    {
+      "paper_id": "sample-004",
+      "title": "Sample Paper D: Contextuality As Background Structure",
+      "source": "Sample",
+      "url": "https://example.org/papers/sample-004",
+      "artifact_status": "sample"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "daily_report.md",
+      "artifact_status": "sample",
+      "description": "Sample daily report."
+    },
+    {
+      "path": "paper_triage.md",
+      "artifact_status": "sample",
+      "description": "Sample triage table."
+    },
+    {
+      "path": "idea_candidates.md",
+      "artifact_status": "sample",
+      "description": "Sample speculative idea candidates."
+    }
+  ]
+}

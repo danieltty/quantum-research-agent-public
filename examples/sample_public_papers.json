@@ -1,0 +1,46 @@
+[
+  {
+    "paper_id": "sample-001",
+    "title": "Sample Paper A: Operational Closure In Toy Quantum Reconstructions",
+    "authors": ["Sample Author One", "Sample Author Two"],
+    "year": 2026,
+    "source": "Sample",
+    "url": "https://example.org/papers/sample-001",
+    "abstract": "A fictional sample abstract about operational reconstructions, state spaces, and constraints on classical explanations.",
+    "topics": ["quantum foundations", "operational theories", "reconstruction"],
+    "artifact_status": "sample"
+  },
+  {
+    "paper_id": "sample-002",
+    "title": "Sample Paper B: Relational State Assignments And Observer Records",
+    "authors": ["Sample Author Three"],
+    "year": 2026,
+    "source": "Sample",
+    "url": "https://example.org/papers/sample-002",
+    "abstract": "A fictional sample abstract about observer-indexed records, relational quantum mechanics, and consistency constraints.",
+    "topics": ["quantum foundations", "relational quantum mechanics"],
+    "artifact_status": "sample"
+  },
+  {
+    "paper_id": "sample-003",
+    "title": "Sample Paper C: Classical Hidden Variables In A Limited Fact Model",
+    "authors": ["Sample Author Four"],
+    "year": 2026,
+    "source": "Sample",
+    "url": "https://example.org/papers/sample-003",
+    "abstract": "A fictional sample abstract about hidden-variable explanations and limits on globally consistent fact assignments.",
+    "topics": ["hidden variables", "foundations"],
+    "artifact_status": "sample"
+  },
+  {
+    "paper_id": "sample-004",
+    "title": "Sample Paper D: Contextuality As Background Structure",
+    "authors": ["Sample Author Five"],
+    "year": 2026,
+    "source": "Sample",
+    "url": "https://example.org/papers/sample-004",
+    "abstract": "A fictional sample abstract about contextuality as a background theme in generalized probabilistic theories.",
+    "topics": ["contextuality", "generalized probabilistic theories"],
+    "artifact_status": "sample"
+  }
+]

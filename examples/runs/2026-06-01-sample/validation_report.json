@@ -1,0 +1,11 @@
+{
+  "artifact_status": "sample",
+  "validation_passed": true,
+  "checks": {
+    "required_files_present": true,
+    "schemas_valid": true,
+    "secret_scan_passed": true,
+    "artifact_status_present": true
+  },
+  "notes": "Sample validation report."
+}

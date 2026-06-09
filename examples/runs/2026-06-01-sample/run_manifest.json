@@ -1,0 +1,19 @@
+{
+  "run_id": "2026-06-01-sample",
+  "artifact_status": "sample",
+  "source_type": "sample_public_input",
+  "created_at": "2026-06-01T09:00:00+08:00",
+  "pipeline_mode": "public_demo",
+  "input_files": [
+    "examples/sample_public_papers.json"
+  ],
+  "outputs": [
+    "daily_report.md",
+    "paper_triage.md",
+    "idea_candidates.md",
+    "provenance.json",
+    "validation_report.json"
+  ],
+  "human_review_status": "not_reviewed",
+  "notes": "Sample artifact demonstrating public repo format. Not a production run."
+}

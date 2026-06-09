@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/qra-public/analysis_report.schema.json",
+  "title": "QRA Public Analysis Report",
+  "type": "object",
+  "required": [
+    "run_id",
+    "artifact_status",
+    "summary",
+    "top_items",
+    "candidate_connections",
+    "human_review_status"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "artifact_status": {
+      "type": "string",
+      "enum": ["sample", "demo", "sanitized_real_run", "template"]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "top_items": {
+      "type": "array"
+    },
+    "candidate_connections": {
+      "type": "array"
+    },
+    "human_review_status": {
+      "type": "string",
+      "enum": ["not_reviewed", "reviewed", "accepted", "rejected", "needs_followup"]
+    }
+  },
+  "additionalProperties": true
+}
