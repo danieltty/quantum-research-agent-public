@@ -1,0 +1,15 @@
+{
+  "artifact_status": "sanitized_real_run",
+  "review_status": "reviewed_for_publication",
+  "checks": {
+    "raw_model_trace_removed": true,
+    "private_prompts_removed": true,
+    "private_memory_removed": true,
+    "private_paths_removed": true,
+    "internal_scoring_removed": true,
+    "unpublished_proof_strategy_removed": true,
+    "public_sources_linked": true,
+    "human_review_required_for_scientific_claims": true
+  },
+  "notes": "This artifact is intended to show the style and depth of QRA research output. It is not a peer-reviewed scientific result."
+}

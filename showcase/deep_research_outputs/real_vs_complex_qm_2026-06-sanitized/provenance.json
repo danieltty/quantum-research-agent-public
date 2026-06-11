@@ -1,0 +1,52 @@
+{
+  "artifact_status": "sanitized_real_run",
+  "run_id": "real-vs-complex-qm-2026-06-sanitized",
+  "source_type": "production_sanitized_deep_research_note",
+  "sources": [
+    {
+      "title": "Quantum theory based on real numbers can be experimentally falsified",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2101.10873",
+      "artifact_status": "public_source"
+    },
+    {
+      "title": "Quantum theory does not need complex numbers",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2504.02808",
+      "artifact_status": "public_source"
+    },
+    {
+      "title": "Quantum mechanics over real numbers fully reproduces standard quantum theory",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2604.19482",
+      "artifact_status": "public_source"
+    },
+    {
+      "title": "Imaginarity witness",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2606.04763",
+      "artifact_status": "public_source"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "deep_research_note.md",
+      "artifact_status": "sanitized_real_run",
+      "description": "Sanitized long-form research note derived from a real QRA research cluster."
+    },
+    {
+      "path": "review_status.json",
+      "artifact_status": "sanitized_real_run",
+      "description": "Publication review status for the sanitized note."
+    }
+  ],
+  "removed_for_publication": [
+    "private prompts",
+    "raw model traces",
+    "internal scoring signals",
+    "private memory contents",
+    "private paths",
+    "raw logs",
+    "unpublished proof strategy"
+  ]
+}
