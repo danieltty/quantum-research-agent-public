@@ -11,6 +11,7 @@ The full working repository remains private because it contains unpublished rese
 This repo contains:
 
 - A public conceptual workflow description of the autonomous research pipeline.
+- A public showcase of sanitized operating evidence and research-assistant behavior.
 - Sample daily run artifacts that demonstrate the expected output shape.
 - JSON schemas for run manifests, provenance records, paper records, and analysis reports.
 - A deterministic demo pipeline that produces a mock daily research report from public/sample inputs.
@@ -62,6 +63,17 @@ Artifacts in this repository use explicit labels:
 The initial version of this repository includes only `sample` and locally generated `demo` artifacts. It does not include sanitized production runs.
 
 See [examples/README.md](examples/README.md) and [docs/evidence_policy.md](docs/evidence_policy.md).
+
+## Showcase Evidence
+
+The [showcase](showcase/README.md) directory adds public-safe evidence for what the private system does over time:
+
+- [operations_summary.md](showcase/operations_summary.md): sanitized aggregate run history and reliability snapshot.
+- [memory_compounding_example.md](showcase/memory_compounding_example.md): how repeated runs build on prior research memory.
+- [hypothesis_case_study.md](showcase/hypothesis_case_study.md): how source material becomes a candidate hypothesis for review.
+- [sanitized_runs/2026-06-10](showcase/sanitized_runs/2026-06-10): one sanitized real-run summary with private details removed.
+
+These artifacts are evidence summaries. They do not include raw logs, private prompts, paper IDs, private notes, unpublished proof attempts, scoring heuristics, or production code.
 
 ## Demo Mode
 

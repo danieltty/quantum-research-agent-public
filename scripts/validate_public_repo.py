@@ -23,8 +23,10 @@ REQUIRED_FILES = [
     "docs/architecture.md",
     "docs/evidence_policy.md",
     "docs/demo_mode.md",
+    "docs/evaluation.md",
     "docs/limitations.md",
     "docs/claim_language.md",
+    "docs/why_qra_is_different.md",
     "docs/roadmap_public.md",
     "examples/README.md",
     "examples/sample_public_papers.json",
@@ -43,6 +45,14 @@ REQUIRED_FILES = [
     "tests/test_schema_validation.py",
     "tests/test_secret_scan.py",
     ".github/workflows/validate.yml",
+    "showcase/README.md",
+    "showcase/operations_summary.md",
+    "showcase/memory_compounding_example.md",
+    "showcase/hypothesis_case_study.md",
+    "showcase/sanitized_runs/2026-06-10/run_manifest.json",
+    "showcase/sanitized_runs/2026-06-10/stage_summary.json",
+    "showcase/sanitized_runs/2026-06-10/daily_report.md",
+    "showcase/sanitized_runs/2026-06-10/validation_report.json",
 ]
 
 
@@ -52,6 +62,7 @@ def main() -> int:
     failures.extend(_check_required_files())
     failures.extend(_check_sample_papers())
     failures.extend(_check_run_folders())
+    failures.extend(_check_showcase_artifacts())
     failures.extend(_check_secret_scan())
 
     if failures:
@@ -64,6 +75,7 @@ def main() -> int:
     print("- Required files present")
     print("- Sample paper records validate")
     print("- Run folders validate")
+    print("- Showcase artifacts validate")
     print("- Secret scan passed")
     return 0
 
@@ -105,6 +117,26 @@ def _check_run_folders() -> list[str]:
     for run_path in sorted(path for path in runs_root.iterdir() if path.is_dir()):
         result = validate_run_folder(run_path, ROOT / "schemas")
         failures.extend(result["errors"])
+    return failures
+
+
+def _check_showcase_artifacts() -> list[str]:
+    failures: list[str] = []
+    manifest = ROOT / "showcase" / "sanitized_runs" / "2026-06-10" / "run_manifest.json"
+    failures.extend(
+        f"showcase/sanitized_runs/2026-06-10/run_manifest.json: {error}"
+        for error in validate_json_file(manifest, ROOT / "schemas" / "run_manifest.schema.json")
+    )
+
+    for path in [
+        ROOT / "showcase" / "operations_summary.md",
+        ROOT / "showcase" / "memory_compounding_example.md",
+        ROOT / "showcase" / "hypothesis_case_study.md",
+        ROOT / "showcase" / "sanitized_runs" / "2026-06-10" / "daily_report.md",
+    ]:
+        text = path.read_text(encoding="utf-8")
+        if "Artifact status:" not in text:
+            failures.append(f"{path.relative_to(ROOT)}: missing artifact status marker")
     return failures
 
 
