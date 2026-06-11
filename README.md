@@ -15,7 +15,7 @@ This repo contains:
 - JSON schemas for run manifests, provenance records, paper records, and analysis reports.
 - A deterministic demo pipeline that produces a mock daily research report from public/sample inputs.
 - Validation scripts for checking artifact structure and scanning for obvious secrets.
-- Public documentation explaining scope, limitations, sanitization, and responsible claim language.
+- Public documentation explaining scope, limitations, evidence labels, and responsible claim language.
 
 ## What This Repo Is Not
 

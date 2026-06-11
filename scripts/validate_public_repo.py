@@ -22,7 +22,6 @@ REQUIRED_FILES = [
     "pyproject.toml",
     "docs/architecture.md",
     "docs/evidence_policy.md",
-    "docs/privacy_and_sanitization.md",
     "docs/demo_mode.md",
     "docs/limitations.md",
     "docs/claim_language.md",
