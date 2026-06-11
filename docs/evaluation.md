@@ -11,6 +11,7 @@ This document explains what the public repository currently demonstrates and wha
 | Provenance discipline | Artifact schemas, provenance samples, and sanitized memory-update evidence. |
 | Memory compounding | Public-safe example of how later runs use prior research context. |
 | Hypothesis generation | Sanitized case study showing candidate leads separated from reviewed claims. |
+| Long-form analysis | Sanitized deep-research note in `showcase/deep_research_outputs/`. |
 | Reliability guardrails | CI workflow, schema validation, artifact-label checks, and secret scanning. |
 
 ## Current Sanitized Operating Snapshot
@@ -27,7 +28,7 @@ The private system's reviewed local artifacts show:
 - 80 days with memory update records.
 - 2,964 total memory update records across reviewed update-record artifacts.
 
-These are aggregate counts from manually reviewed local artifacts. Raw logs, paper IDs, source titles, prompts, hashes, private notes, scoring signals, and unpublished research details are not published.
+These are aggregate counts from manually reviewed local artifacts. Raw logs, private source queues, prompts, hashes, private notes, scoring signals, and unpublished research details are not published.
 
 ## What Is Not Yet Claimed
 

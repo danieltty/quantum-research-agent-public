@@ -11,6 +11,7 @@ The artifacts here are designed for readers who want to understand what has been
 | `operations_summary.md` | Sanitized aggregate evidence of daily operation and reliability. |
 | `memory_compounding_example.md` | Shows how repeated runs can build on prior research context. |
 | `hypothesis_case_study.md` | Shows the shape of a candidate hypothesis workflow. |
+| `deep_research_outputs/` | Shows a sanitized long-form research note produced from a real research cluster. |
 | `sanitized_runs/2026-06-10/` | Sanitized real-run summary with private details removed. |
 
 ## Artifact Status

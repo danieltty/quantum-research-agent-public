@@ -74,9 +74,10 @@ The [showcase](showcase/README.md) directory adds sanitized evidence for what th
 - [operations_summary.md](showcase/operations_summary.md): sanitized aggregate run history and reliability snapshot.
 - [memory_compounding_example.md](showcase/memory_compounding_example.md): how repeated runs build on prior research memory.
 - [hypothesis_case_study.md](showcase/hypothesis_case_study.md): how source material becomes a candidate hypothesis for review.
+- [deep_research_outputs](showcase/deep_research_outputs/real_vs_complex_qm_2026-06-sanitized/deep_research_note.md): a sanitized long-form research note showing deeper analytical output.
 - [sanitized_runs/2026-06-10](showcase/sanitized_runs/2026-06-10): one sanitized real-run summary with private details removed.
 
-These artifacts are evidence summaries. They do not include raw logs, private prompts, paper IDs, private notes, unpublished proof attempts, scoring heuristics, or production code.
+These artifacts are evidence summaries. They may link public sources, but they do not include raw logs, private prompts, private source queues, private notes, unpublished proof attempts, scoring heuristics, or production code.
 
 ## Demo Mode
 

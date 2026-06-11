@@ -49,6 +49,9 @@ REQUIRED_FILES = [
     "showcase/operations_summary.md",
     "showcase/memory_compounding_example.md",
     "showcase/hypothesis_case_study.md",
+    "showcase/deep_research_outputs/real_vs_complex_qm_2026-06-sanitized/deep_research_note.md",
+    "showcase/deep_research_outputs/real_vs_complex_qm_2026-06-sanitized/provenance.json",
+    "showcase/deep_research_outputs/real_vs_complex_qm_2026-06-sanitized/review_status.json",
     "showcase/sanitized_runs/2026-06-10/run_manifest.json",
     "showcase/sanitized_runs/2026-06-10/stage_summary.json",
     "showcase/sanitized_runs/2026-06-10/daily_report.md",
@@ -132,6 +135,7 @@ def _check_showcase_artifacts() -> list[str]:
         ROOT / "showcase" / "operations_summary.md",
         ROOT / "showcase" / "memory_compounding_example.md",
         ROOT / "showcase" / "hypothesis_case_study.md",
+        ROOT / "showcase" / "deep_research_outputs" / "real_vs_complex_qm_2026-06-sanitized" / "deep_research_note.md",
         ROOT / "showcase" / "sanitized_runs" / "2026-06-10" / "daily_report.md",
     ]:
         text = path.read_text(encoding="utf-8")
