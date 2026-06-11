@@ -2,7 +2,7 @@
 
 Artifact status: `sanitized_real_run`
 
-This is a public-safe generalized example derived from the structure of real private run artifacts. It demonstrates how QRA is designed to compound research context over time without publishing private memory contents.
+This is a generalized example derived from the structure of real private run artifacts. It demonstrates how QRA is designed to compound research context over time without publishing private memory contents.
 
 ## Pattern
 
@@ -19,9 +19,9 @@ Run N + k
   accumulated context -> candidate hypothesis -> human review
 ```
 
-## Public-Safe Example
+## Public Example
 
-| Step | Public-safe description |
+| Step | Public description |
 | --- | --- |
 | Initial observation | A source item raises a question about how a formal assumption relates to an interpretation-level claim. |
 | Memory update | QRA records a structured update with provenance and confidence metadata. |

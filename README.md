@@ -36,18 +36,21 @@ At a high level, the private system follows a daily research loop:
 
 ```mermaid
 flowchart TD
-  A[Daily Scheduler] --> B[Public Source Discovery]
+  A[Daily Cadence] --> B[Public Source Discovery]
   B --> C[Paper Metadata Normalization]
   C --> D[Relevance and Novelty Triage]
+  M[Private Research Memory] --> D
   D --> E[Focused Paper Analysis]
   E --> F[Provenance-Backed Notes]
-  F --> G[Private Research Memory Update]
-  G --> H[Candidate Connections and Hypotheses]
-  H --> I[Human Review]
-  I --> J[Accepted Notes / Rejected Leads / Follow-up Tasks]
+  F --> M
+  M --> G[Candidate Connections and Hypotheses]
+  G --> H[Human Review]
+  H --> I[Accepted Notes / Rejected Leads / Follow-up Tasks]
+  I --> M
+  I --> B
 ```
 
-The diagram is intentionally conceptual. It communicates system behavior without exposing private prompts, scoring heuristics, deployment details, code architecture, or the private research memory.
+The diagram is intentionally conceptual. It shows the research feedback loop without exposing private prompts, scoring heuristics, deployment details, code architecture, or the private research memory.
 
 More detail is available in [docs/architecture.md](docs/architecture.md).
 
@@ -66,7 +69,7 @@ See [examples/README.md](examples/README.md) and [docs/evidence_policy.md](docs/
 
 ## Showcase Evidence
 
-The [showcase](showcase/README.md) directory adds public-safe evidence for what the private system does over time:
+The [showcase](showcase/README.md) directory adds sanitized evidence for what the private system does over time:
 
 - [operations_summary.md](showcase/operations_summary.md): sanitized aggregate run history and reliability snapshot.
 - [memory_compounding_example.md](showcase/memory_compounding_example.md): how repeated runs build on prior research memory.
