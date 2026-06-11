@@ -1,0 +1,51 @@
+{
+  "artifact_status": "sanitized_real_run",
+  "run_id": "2026-06-10-sanitized",
+  "run_date": "2026-06-10",
+  "run_status": "complete",
+  "stage_summary": [
+    {
+      "stage": "ingest",
+      "status": "complete",
+      "public_counts": {
+        "ingested": 2,
+        "duplicates": 0
+      }
+    },
+    {
+      "stage": "analyze",
+      "status": "complete",
+      "public_counts": {
+        "analyzed": 2,
+        "briefs": 2,
+        "full_read_recommendations": 0
+      }
+    },
+    {
+      "stage": "synthesize",
+      "status": "complete",
+      "public_counts": {
+        "memory_updates_written": 2,
+        "concept_pages_touched": 169,
+        "debate_pages_touched": 3,
+        "paper_relations_detected": 1,
+        "learned_insights": 1
+      }
+    },
+    {
+      "stage": "notify",
+      "status": "complete",
+      "public_counts": {
+        "digest_top_items": 1,
+        "full_read_recommendations": 0,
+        "notification_sent": true
+      }
+    }
+  ],
+  "sanitization_notes": [
+    "Raw logs are not included.",
+    "Paper IDs and titles are removed.",
+    "Prompt names, prompt hashes, and model/provider details are removed.",
+    "Private paths, thresholds, scoring signals, and unpublished notes are removed."
+  ]
+}

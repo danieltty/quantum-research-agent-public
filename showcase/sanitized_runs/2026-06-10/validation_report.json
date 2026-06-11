@@ -1,0 +1,12 @@
+{
+  "artifact_status": "sanitized_real_run",
+  "validation_passed": true,
+  "checks": {
+    "required_files_present": true,
+    "artifact_status_present": true,
+    "private_details_removed": true,
+    "secret_scan_passed": true,
+    "raw_logs_absent": true
+  },
+  "notes": "Public validation summary for sanitized run packet."
+}

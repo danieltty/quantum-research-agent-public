@@ -1,0 +1,17 @@
+{
+  "run_id": "2026-06-10-sanitized",
+  "artifact_status": "sanitized_real_run",
+  "source_type": "production_sanitized_summary",
+  "created_at": "2026-06-10T20:00:00+08:00",
+  "pipeline_mode": "production_sanitized",
+  "input_files": [
+    "private production run manifest, manually reviewed and summarized"
+  ],
+  "outputs": [
+    "daily_report.md",
+    "stage_summary.json",
+    "validation_report.json"
+  ],
+  "human_review_status": "reviewed",
+  "notes": "Sanitized aggregate summary derived from a real private run. Paper IDs, titles, prompts, hashes, paths, raw logs, private notes, scoring signals, and unpublished research details are removed."
+}
