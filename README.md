@@ -4,13 +4,13 @@ Public demo and documentation for a private autonomous quantum foundations resea
 
 This repository is a public evidence and demo layer for a private autonomous research agent focused on quantum foundations and related mathematical physics. The production system is designed to run on a schedule, ingest public research sources, produce provenance-backed research notes, update private research memory, and generate candidate connections or hypotheses for human review.
 
-The full working repository remains private because it contains unpublished research ideas, private notes, prompts, scoring heuristics, operational configuration, and implementation details. This public repository shows the system's architecture, artifact format, evidence discipline, and a reproducible demo mode without exposing private research IP.
+The full working repository remains private because it contains unpublished research ideas, private notes, prompts, scoring heuristics, operational configuration, and implementation details. This public repository shows the system's conceptual workflow, artifact format, evidence discipline, and a reproducible demo mode without exposing private research IP.
 
 ## What This Repo Is
 
 This repo contains:
 
-- A public architecture description of the autonomous research pipeline.
+- A public conceptual workflow description of the autonomous research pipeline.
 - Sample daily run artifacts that demonstrate the expected output shape.
 - JSON schemas for run manifests, provenance records, paper records, and analysis reports.
 - A deterministic demo pipeline that produces a mock daily research report from public/sample inputs.
@@ -29,9 +29,9 @@ The production repository contains unpublished research directions and working n
 
 This public repo separates evidence of workflow shape, artifact discipline, and demo behavior from the private research corpus and implementation.
 
-## Architecture Overview
+## Conceptual Workflow
 
-At a high level, the private system is organized as a daily research loop:
+At a high level, the private system follows a daily research loop:
 
 ```mermaid
 flowchart TD
@@ -46,7 +46,7 @@ flowchart TD
   I --> J[Accepted Notes / Rejected Leads / Follow-up Tasks]
 ```
 
-The diagram is intentionally high level. It communicates system behavior without exposing private prompts, scoring heuristics, deployment details, or the private research memory.
+The diagram is intentionally conceptual. It communicates system behavior without exposing private prompts, scoring heuristics, deployment details, code architecture, or the private research memory.
 
 More detail is available in [docs/architecture.md](docs/architecture.md).
 

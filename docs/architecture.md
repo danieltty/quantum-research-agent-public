@@ -1,6 +1,6 @@
-# Architecture
+# Conceptual Workflow
 
-This document describes the private research agent at a safe, public level. It is meant to communicate behavior and artifact boundaries without exposing private implementation details, prompts, scoring heuristics, deployment configuration, or research memory.
+This document describes the private research agent at a safe, public level. It is meant to communicate behavior and artifact boundaries without exposing private code architecture, implementation details, prompts, scoring heuristics, deployment configuration, or research memory.
 
 ```mermaid
 flowchart TD
@@ -15,7 +15,7 @@ flowchart TD
   I --> J[Accepted Notes / Rejected Leads / Follow-up Tasks]
 ```
 
-## Stages
+## Workflow Steps
 
 | Stage | Public description |
 | --- | --- |
@@ -29,4 +29,4 @@ flowchart TD
 | Candidate connections and hypotheses | Proposes research leads for review. These are not final claims. |
 | Human review | Final interpretation, acceptance, rejection, and follow-up remain human-led. |
 
-The public demo implements only a small deterministic simulation of the artifact flow. It does not include the private production pipeline, private prompts, private memory, scheduler configuration, or internal research strategy.
+The public demo implements only a small deterministic simulation of the artifact flow. It does not include the private production pipeline, private code architecture, private prompts, private memory, scheduler configuration, or internal research strategy.
