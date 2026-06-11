@@ -1,6 +1,6 @@
 # Showcase
 
-This directory contains public-safe evidence that the private QRA system is more than a static demo.
+This directory contains sanitized evidence that the private QRA system is more than a static demo.
 
 The artifacts here are designed for readers who want to understand what has been built without seeing private code, private prompts, private research memory, unpublished proof attempts, raw logs, or internal scoring logic.
 
@@ -10,7 +10,7 @@ The artifacts here are designed for readers who want to understand what has been
 | --- | --- |
 | `operations_summary.md` | Sanitized aggregate evidence of daily operation and reliability. |
 | `memory_compounding_example.md` | Shows how repeated runs can build on prior research context. |
-| `hypothesis_case_study.md` | Shows the public-safe shape of a candidate hypothesis workflow. |
+| `hypothesis_case_study.md` | Shows the shape of a candidate hypothesis workflow. |
 | `sanitized_runs/2026-06-10/` | Sanitized real-run summary with private details removed. |
 
 ## Artifact Status

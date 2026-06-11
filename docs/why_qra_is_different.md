@@ -40,7 +40,7 @@ QRA can propose candidate hypotheses or follow-up leads. These remain explicitly
 
 ## Public Boundary
 
-This repository shows the public-safe evidence layer:
+This repository shows the public evidence layer:
 
 - conceptual workflow
 - artifact formats

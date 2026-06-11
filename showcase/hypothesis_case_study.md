@@ -2,11 +2,11 @@
 
 Artifact status: `sanitized_real_run`
 
-This case study shows the public-safe shape of a QRA hypothesis workflow. It is generalized from real artifact structure. Source titles, paper IDs, internal notes, prompts, scoring signals, and unpublished research details are removed.
+This case study shows the shape of a QRA hypothesis workflow. It is generalized from real artifact structure. Source titles, paper IDs, internal notes, prompts, scoring signals, and unpublished research details are removed.
 
 ## Case Shape
 
-| Stage | Public-safe evidence |
+| Stage | Public evidence |
 | --- | --- |
 | Source discovery | Public research items enter the daily queue. |
 | Triage | Items are filtered for relevance to the active research agenda. |
